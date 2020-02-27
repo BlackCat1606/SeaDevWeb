@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>DZHealth - Liste Patients </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="DZHealth%20-%20Liste%20Patients_fichiers/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="DZHealth%20-%20Liste%20Patients_fichiers/font-awesome.css" rel="stylesheet">
+        
+    <!-- Custom styles for this template -->
+    <link href="DZHealth%20-%20Liste%20Patients_fichiers/style.css" rel="stylesheet">
+    <link href="DZHealth%20-%20Liste%20Patients_fichiers/style-responsive.css" rel="stylesheet">
+
+    <link href="DZHealth%20-%20Liste%20Patients_fichiers/table-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section id="container">
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="http://localhost/dzhealth/index.php" class="logo"><b>DZHealth</b></a>
+            <!--logo end-->
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/dzhealth/index.php#">
+                            <i class="fa fa-calendar"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">Vous avez 4 Rendez-Vous</p>
+                            </li>
+                            <li class="external">
+                                <a href="http://localhost/dzhealth/calendar.php">Voir tous les Rendez-Vous</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- settings end -->
+                    <!-- bell dropdown start-->
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/dzhealth/index.php#">
+                            <i class="fa fa-bell"></i>
+                            <span class="badge bg-theme">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">Vous avez 5 notifications</p>
+                            </li>
+                            <li>
+                                <a href="http://localhost/dzhealth/index.php#">Voir toutes les notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <!--Logout-->
+            <div class="top-menu">
+              <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="http://localhost/dzhealth/login.php">Se Déconnecter</a></li>
+              </ul>
+            </div>
+            <!-- Lock-Screen-->
+            <div class="top-menu">
+              <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="http://localhost/dzhealth/lock_screen.php">Verouiller</a></li>
+              </ul>
+            </div>
+            
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div tabindex="5000" style="overflow: hidden;" id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+                  <!-- Pic -->
+                  <p class="centered"><a href="#"><img src="DZHealth%20-%20Liste%20Patients_fichiers/ui-med.png" class="img-circle" height="80" width="80"></a></p>
+                  <!-- Prenom + NOM -->
+                  <h5 class="centered">
+                    Wissem REDJEM                  </h5>
+                  <!-- Accueil -->
+                  <li class="mt">
+                      <a href="http://localhost/dzhealth/index.php">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Accueil</span>
+                      </a>
+                  </li> 
+                  <!-- Patients -->
+                  <li class="sub-menu dcjq-parent-li">
+                      <a class="dcjq-parent" href="javascript:;">
+                          <i class=" fa fa-stethoscope"></i>
+                          <span>Patients</span>
+                      <span class="dcjq-icon"></span></a>
+                      <ul style="display: none;" class="sub">
+                          <li><a class="active" href="http://localhost/dzhealth/list.php">Liste Patients</a></li>
+                          <li><a href="http://localhost/dzhealth/form_component.php">Nouveau Patient</a></li>
+                      </ul>
+                  </li>
+                  <!-- Calendrier -->
+                  <li class="mt">
+                      <a href="http://localhost/dzhealth/calendar.php">
+                          <i class="fa fa-calendar"></i>
+                          <span>Calendrier</span>
+                      </a>
+                  </li>
+                  <!-- Lock-Screen -->
+                  <li class="mt">
+                      <a href="http://localhost/dzhealth/lock_screen.php">
+                          <i class="fa fa-lock"></i>
+                          <span>Verouiller</span>
+                      </a>
+                  </li>
+
+                  <!-- A propos -->
+                  <li class="mt">
+                    <a href="http://localhost/dzhealth/apropos.php">
+                        <i class="fa fa-info"></i>
+                        <span>A Propos</span>
+                    </a>
+                  </li>
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      
+      <section id="main-content">
+          <section class="wrapper">
+          	<h3><i class="fa fa-angle-right"></i> Liste des Patients</h3>
+		  		<div class="row mt">
+			  		<div class="col-lg-12">
+              <div class="content-panel">
+              <!--<h4><i class="fa fa-angle-right"></i> Responsive Table</h4>-->
+                <section id="unseen">
+                    
+                  
+                    <table class="table table-bordered table-striped table-condensed">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Sexe</th>
+                        <th>Type</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                          <tr>
+                      <td> <a href="http://localhost/dzhealth/patient.php?id=p_patient1"> 
+                               p_patient1  
+                            </a>
+                      </td>
+                      <td> PATIENT1        </td>
+                      <td> Patient     </td>
+                      <td> 
+                        Masculin       
+                      </td>
+                      <td> 
+                        A, D,      
+                      </td>
+                  </tr>
+                                        <tr>
+                      <td> <a href="http://localhost/dzhealth/patient.php?id=p_patient2"> 
+                               p_patient2  
+                            </a>
+                      </td>
+                      <td> PATIENT2        </td>
+                      <td> Patient     </td>
+                      <td> 
+                        Feminin       
+                      </td>
+                      <td> 
+                        G     
+                      </td>
+                  </tr>
+                                    </tbody>
+
+                  </table>
+                  <p class="type-patient"> Type: A (Alzheimer), D (Diabète), G (Grossesse à risque) </p>
+
+                                  </section>
+              </div><!-- /content-panel -->
+            </div><!-- /col-lg-4 -->			
+		  	 </div><!-- /row -->
+		  		  	
+
+		</section><!-- --/wrapper ---->
+      </section><!-- /MAIN CONTENT -->
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              2017 - SeaDev
+              <a href="http://localhost/dzhealth/list.php" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="DZHealth%20-%20Liste%20Patients_fichiers/jquery_003.js"></script>
+    <script src="DZHealth%20-%20Liste%20Patients_fichiers/bootstrap.js"></script>
+    <script class="include" type="text/javascript" src="DZHealth%20-%20Liste%20Patients_fichiers/jquery_004.js"></script>
+    <script src="DZHealth%20-%20Liste%20Patients_fichiers/jquery.js"></script>
+    <script src="DZHealth%20-%20Liste%20Patients_fichiers/jquery_002.js" type="text/javascript"></script>
+
+
+    <!--common script for all pages-->
+    <script src="DZHealth%20-%20Liste%20Patients_fichiers/common-scripts.js"></script><div style="width: 3px; z-index: auto; background: none repeat scroll 0% 0% rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; left: 207px; height: 625px; display: none; opacity: 0;" class="nicescroll-rails" id="ascrail2000"><div style="position: relative; top: 0px; float: right; width: 3px; height: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;"></div></div><div style="height: 3px; z-index: auto; background: none repeat scroll 0% 0% rgb(64, 64, 64); top: 622px; left: 0px; position: fixed; cursor: default; display: none; opacity: 0;" class="nicescroll-rails" id="ascrail2000-hr"><div style="position: relative; top: 0px; height: 3px; width: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px; left: 0px;"></div></div><div style="width: 6px; z-index: 1000; background: none repeat scroll 0% 0% rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; display: none;" class="nicescroll-rails" id="ascrail2001"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;"></div></div><div style="height: 6px; z-index: 1000; background: none repeat scroll 0% 0% rgb(64, 64, 64); position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none;" class="nicescroll-rails" id="ascrail2001-hr"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;"></div></div>
+
+    <!--script for this page-->
+    
+
+  
+
+</body></html>

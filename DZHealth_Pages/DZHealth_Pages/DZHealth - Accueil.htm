@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <!-- DASHGUM - FREE Bootstrap Admin Template -->
+    <title>DZHealth - Accueil</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="DZHealth%20-%20Accueil_fichiers/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="DZHealth%20-%20Accueil_fichiers/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="DZHealth%20-%20Accueil_fichiers/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="DZHealth%20-%20Accueil_fichiers/jquery.css">
+    <link rel="stylesheet" type="text/css" href="DZHealth%20-%20Accueil_fichiers/style.css">    
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="DZHealth%20-%20Accueil_fichiers/style_002.css">
+    <link href="DZHealth%20-%20Accueil_fichiers/style-responsive.css" rel="stylesheet">
+
+    <script src="DZHealth%20-%20Accueil_fichiers/Chart.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;display: block;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;padding: 5px 5px 8px 5px;font: 10px arial, san serif;text-align: left;}</style></head>
+
+  <body>
+
+  <section id="container">
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="http://localhost/dzhealth/index.php" class="logo"><b>DZHealth</b></a>
+            <!--logo end-->
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/dzhealth/index.php#">
+                            <i class="fa fa-calendar"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">Vous avez 4 Rendez-Vous</p>
+                            </li>
+                            <li class="external">
+                                <a href="http://localhost/dzhealth/calendar.php">Voir tous les Rendez-Vous</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- settings end -->
+                    <!-- bell dropdown start-->
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/dzhealth/index.php#">
+                            <i class="fa fa-bell"></i>
+                            <span class="badge bg-theme">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">Vous avez 5 notifications</p>
+                            </li>
+                            <li>
+                                <a href="http://localhost/dzhealth/index.php#">Voir toutes les notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <!--Logout-->
+            <div class="top-menu">
+              <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="http://localhost/dzhealth/login.php">Se Déconnecter</a></li>
+              </ul>
+            </div>
+            <!-- Lock-Screen-->
+            <div class="top-menu">
+              <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="http://localhost/dzhealth/lock_screen.php">Verouiller</a></li>
+              </ul>
+            </div>
+
+            
+            
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div tabindex="5000" style="overflow: hidden;" id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+                  <!-- Pic -->
+              	  <p class="centered"><a href="#"><img src="DZHealth%20-%20Accueil_fichiers/ui-med.png" class="img-circle" height="80" width="80 "></a></p>
+              	  <!-- Prenom + NOM -->
+                  <h5 class="centered">
+                    Wissem REDJEM                  </h5>
+              	  <!-- Accueil -->
+                  <li class="mt">
+                      <a class="active" href="http://localhost/dzhealth/index.php">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Accueil</span>
+                      </a>
+                  </li> 
+                  <!-- Patients -->
+                  <li class="sub-menu dcjq-parent-li">
+                      <a class="dcjq-parent" href="javascript:;">
+                          <i class=" fa fa-stethoscope"></i>
+                          <span>Patients</span>
+                      <span class="dcjq-icon"></span></a>
+                      <ul style="display: none;" class="sub">
+                          <li><a href="http://localhost/dzhealth/list.php">Liste Patients</a></li>
+                          <li><a href="http://localhost/dzhealth/form_component.php">Nouveau Patient</a></li>
+                      </ul>
+                  </li>
+                  
+                  <!-- Calendrier -->
+                  <li class="mt">
+                      <a href="http://localhost/dzhealth/calendar.php">
+                          <i class="fa fa-calendar"></i>
+                          <span>Calendrier</span>
+                      </a>
+                  </li>
+                  <!-- Lock-Screen -->
+                  <li class="mt">
+                      <a href="http://localhost/dzhealth/lock_screen.php">
+                          <i class="fa fa-lock"></i>
+                          <span>Verouiller</span>
+                      </a>
+                  </li>
+
+                  <!-- A propos -->
+                  <li class="mt">
+                    <a href="http://localhost/dzhealth/apropos.php">
+                        <i class="fa fa-info"></i>
+                        <span>A Propos</span>
+                    </a>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      &lt;
+      <section id="main-content">
+          <section class="wrapper">
+					<div class="row mt">
+              
+					
+      <!-- **********************************************************************************************************************************************************
+      RIGHT SIDEBAR CONTENT
+      *********************************************************************************************************************************************************** -->                  
+                  
+        <div class="calendar-float col-lg-3 ds ">
+          <!-- CALENDAR-->
+          <div id="calendar" class="calendar-float mb">
+              <div class="calendar-float panel green-panel no-margin">
+                  <div class="calendar-float panel-body">
+                      <div title="" data-original-title="" id="date-popover" class="calendar-float popover top" style="cursor: pointer; margin-left: 33%; margin-top: -50px; width: 175px; display: none;">
+                          <div class="arrow"></div>
+                          <h3 class="popover-title" style="disadding: none;"></h3>
+                          <div id="date-popover-content" class="popover-content"></div>
+                      </div>
+                      <div id="zabuto_calendar_1r0h"><div class="zabuto_calendar" id="zabuto_calendar_1r0h"><table class="table"><tbody><tr class="calendar-month-header"><th><div id="zabuto_calendar_1r0h_nav-prev" class="calendar-month-navigation"><span><span class="fa fa-chevron-left text-transparent"></span></span></div></th><th colspan="5"><span>June 2017</span></th><th><div id="zabuto_calendar_1r0h_nav-next" class="calendar-month-navigation"><span><span class="fa fa-chevron-right text-transparent"></span></span></div></th></tr><tr class="calendar-dow-header"><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr class="calendar-dow"><td></td><td></td><td></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-01"><div id="zabuto_calendar_1r0h_2017-06-01_day" class="day">1</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-02"><div id="zabuto_calendar_1r0h_2017-06-02_day" class="day">2</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-03"><div id="zabuto_calendar_1r0h_2017-06-03_day" class="day">3</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-04"><div id="zabuto_calendar_1r0h_2017-06-04_day" class="day">4</div></td></tr><tr class="calendar-dow"><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-05"><div id="zabuto_calendar_1r0h_2017-06-05_day" class="day">5</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-06"><div id="zabuto_calendar_1r0h_2017-06-06_day" class="day">6</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-07"><div id="zabuto_calendar_1r0h_2017-06-07_day" class="day">7</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-08"><div id="zabuto_calendar_1r0h_2017-06-08_day" class="day">8</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-09"><div id="zabuto_calendar_1r0h_2017-06-09_day" class="day">9</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-10"><div id="zabuto_calendar_1r0h_2017-06-10_day" class="day">10</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-11"><div id="zabuto_calendar_1r0h_2017-06-11_day" class="day">11</div></td></tr><tr class="calendar-dow"><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-12"><div id="zabuto_calendar_1r0h_2017-06-12_day" class="day">12</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-13"><div id="zabuto_calendar_1r0h_2017-06-13_day" class="day">13</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-14"><div id="zabuto_calendar_1r0h_2017-06-14_day" class="day">14</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-15"><div id="zabuto_calendar_1r0h_2017-06-15_day" class="day">15</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-16"><div id="zabuto_calendar_1r0h_2017-06-16_day" class="day">16</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-17"><div id="zabuto_calendar_1r0h_2017-06-17_day" class="day">17</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-18"><div id="zabuto_calendar_1r0h_2017-06-18_day" class="day">18</div></td></tr><tr class="calendar-dow"><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-19"><div id="zabuto_calendar_1r0h_2017-06-19_day" class="day">19</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-20"><div id="zabuto_calendar_1r0h_2017-06-20_day" class="day">20</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-21"><div id="zabuto_calendar_1r0h_2017-06-21_day" class="day">21</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-22"><div id="zabuto_calendar_1r0h_2017-06-22_day" class="day">22</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-23"><div id="zabuto_calendar_1r0h_2017-06-23_day" class="day">23</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-24"><div id="zabuto_calendar_1r0h_2017-06-24_day" class="day">24</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-25"><div id="zabuto_calendar_1r0h_2017-06-25_day" class="day">25</div></td></tr><tr class="calendar-dow"><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-26"><div id="zabuto_calendar_1r0h_2017-06-26_day" class="day">26</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-27"><div id="zabuto_calendar_1r0h_2017-06-27_day" class="day">27</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-28"><div id="zabuto_calendar_1r0h_2017-06-28_day" class="day">28</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-29"><div id="zabuto_calendar_1r0h_2017-06-29_day" class="day">29</div></td><td class="dow-clickable" id="zabuto_calendar_1r0h_2017-06-30"><div id="zabuto_calendar_1r0h_2017-06-30_day" class="day">30</div></td><td></td><td></td></tr></tbody></table><div class="legend" id="zabuto_calendar_1r0h_legend"><span class="legend-text"><span class="badge badge-event">00</span> Special event</span><span class="legend-block"><ul class="legend"><li class="event"></li><span>Regular event</span></ul></span></div></div></div>
+                  </div>
+              </div>
+          </div><!-- / calendar -->
+            
+        </div><!-- /col-lg-3 -->
+              </div><!-- --/row ---->
+          </section>
+      </section>
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              2017 - SeaDev
+              <a href="#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="DZHealth%20-%20Accueil_fichiers/jquery_006.js"></script>
+    <script src="DZHealth%20-%20Accueil_fichiers/jquery-1.js"></script>
+    <script src="DZHealth%20-%20Accueil_fichiers/bootstrap.js"></script>
+    <script class="include" type="text/javascript" src="DZHealth%20-%20Accueil_fichiers/jquery_005.js"></script>
+    <script src="DZHealth%20-%20Accueil_fichiers/jquery.js"></script>
+    <script src="DZHealth%20-%20Accueil_fichiers/jquery_002.js" type="text/javascript"></script>
+    <script src="DZHealth%20-%20Accueil_fichiers/jquery_003.js"></script>
+
+
+    <!--common script for all pages-->
+    <script src="DZHealth%20-%20Accueil_fichiers/common-scripts.js"></script><div style="width: 3px; z-index: auto; background: none repeat scroll 0% 0% rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; left: 207px; height: 625px; display: none; opacity: 1;" class="nicescroll-rails" id="ascrail2000"><div style="position: relative; top: 0px; float: right; width: 3px; height: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;"></div></div><div style="height: 3px; z-index: auto; background: none repeat scroll 0% 0% rgb(64, 64, 64); top: 622px; left: 0px; position: fixed; cursor: default; display: none; opacity: 1;" class="nicescroll-rails" id="ascrail2000-hr"><div style="position: relative; top: 0px; height: 3px; width: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px; left: 0px;"></div></div><div style="width: 6px; z-index: 1000; background: none repeat scroll 0% 0% rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; display: none;" class="nicescroll-rails" id="ascrail2001"><div style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;"></div></div><div style="height: 6px; z-index: 1000; background: none repeat scroll 0% 0% rgb(64, 64, 64); position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none;" class="nicescroll-rails" id="ascrail2001-hr"><div style="position: relative; top: 0px; height: 6px; width: 0px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;"></div></div>
+    
+    <script type="text/javascript" src="DZHealth%20-%20Accueil_fichiers/jquery_004.js"></script>
+    <script type="text/javascript" src="DZHealth%20-%20Accueil_fichiers/gritter-conf.js"></script>
+
+    <!--script for this page-->
+    <script src="DZHealth%20-%20Accueil_fichiers/sparkline-chart.js"></script>    
+	<script src="DZHealth%20-%20Accueil_fichiers/zabuto_calendar.js"></script>	
+	
+	
+	
+	<script type="application/javascript">
+        $(document).ready(function () {
+            $("#date-popover").popover({html: true, trigger: "manual"});
+            $("#date-popover").hide();
+            $("#date-popover").click(function (e) {
+                $(this).hide();
+            });
+        
+            $("#my-calendar").zabuto_calendar({
+                action: function () {
+                    return myDateFunction(this.id, false);
+                },
+                action_nav: function () {
+                    return myNavFunction(this.id);
+                },
+                ajax: {
+                    url: "show_data.php?action=1",
+                    modal: true
+                },
+                legend: [
+                    {type: "text", label: "Special event", badge: "00"},
+                    {type: "block", label: "Regular event", }
+                ]
+            });
+        });
+        
+        
+        function myNavFunction(id) {
+            $("#date-popover").hide();
+            var nav = $("#" + id).data("navigation");
+            var to = $("#" + id).data("to");
+            console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+        }
+    </script>
+  
+
+  
+
+</body></html>
